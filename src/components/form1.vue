@@ -1,0 +1,91 @@
+<template>
+    <div>
+        <v-container>
+        <v-row>
+            <v-col> 
+              <v-form>
+                
+                    
+                
+                <v-text-field
+                  label="Nombre Completo"
+                  outlined
+                  required
+                  @input="$v.name.$touch()"
+                  @blur="$v.name.$touch()"
+                ></v-text-field>
+                <v-text-field
+                  label="DNI"
+                  :counter="7"
+                  outlined
+                  required
+                  @input="$v.name.$touch()"
+                  @blur="$v.name.$touch()"
+                ></v-text-field>
+                <v-text-field
+                  label="Celular"
+                  outlined
+                  :counter="9"
+                  required
+                  @input="$v.name.$touch()"
+                  @blur="$v.name.$touch()"
+                ></v-text-field>
+                <v-text-field
+                  label="Correo"
+                  outlined
+                  required
+                  @input="$v.name.$touch()"
+                  @blur="$v.name.$touch()"
+                ></v-text-field>
+                <v-text-field
+                  label="Dirección"
+                  outlined
+                  required
+                  @input="$v.email.$touch()"
+                  @blur="$v.email.$touch()"
+                ></v-text-field>
+              </v-form>
+            </v-col>
+
+            <v-col>
+              <v-form>
+                <v-text-field
+                  label="Departamento"
+                  outlined
+                  required
+                  @input="$v.name.$touch()"
+                  @blur="$v.name.$touch()"
+                ></v-text-field>
+                <v-text-field
+                  label="Provincia"
+                  outlined
+                  required
+                  @input="$v.email.$touch()"
+                  @blur="$v.email.$touch()"
+                ></v-text-field>
+                <v-text-field
+                  outlined
+                  label="Distrito"
+                  required
+                  @input="$v.email.$touch()"
+                  @blur="$v.email.$touch()"
+                ></v-text-field>
+                <v-text-field
+                  label="Escribe un comentario"
+                  outlined
+                  required
+                  @input="$v.email.$touch()"
+                  @blur="$v.email.$touch()"
+                ></v-text-field>
+              </v-form>
+            </v-col>
+          </v-row>
+          </v-container>
+    </div>
+</template>
+<script>
+export default {
+     data: () => ({
+  }),
+}
+</script>
